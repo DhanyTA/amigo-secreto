@@ -21,11 +21,11 @@ let lista = document.getElementById("listaAmigos");
 
 //limpia la lista
 lista.innerHTML = "";
-
+//recorre el array para agregar los amigos a la lista
 for(i=0; i < listaAmigos.length; i++){
-    let li = document.createElement("li");//traemos la <li> a js
-    li.innerHTML = listaAmigos[i]; //se añaden los amigos a la lista
-    lista.appendChild(li); //se añaden las <li> a el <ul>
+    let li = document.createElement("li");
+    li.innerHTML = listaAmigos[i]; //se añaden los amigos a los elementos <li>
+    lista.appendChild(li);  
 }
 }
 
